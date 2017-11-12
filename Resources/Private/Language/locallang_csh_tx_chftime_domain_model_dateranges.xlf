@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-09-11T21:22:39Z" product-name="chf_time">
+		<header/>
+		<body>
+			<trans-unit id="date_comment.description">
+				<source>dateComment</source>
+			</trans-unit>
+			<trans-unit id="start_date.description">
+				<source>startDate</source>
+			</trans-unit>
+			<trans-unit id="end_date.description">
+				<source>endDate</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

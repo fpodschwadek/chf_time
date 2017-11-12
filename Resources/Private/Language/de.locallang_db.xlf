@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2015-04-23T09:04:54Z" product-name="chf_time">
+		<header/>
+		<body>
+
+			<!-- DATERANGES -->
+
+			<trans-unit id="tx_chftime_domain_model_dateranges">
+				<source>Dateranges</source>
+				<target state="translated">Datierungen</target>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_dateranges.date_comment">
+				<source>Date Comment</source>
+				<target state="translated">Datum (Textform)</target>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_dateranges.start_date">
+				<source>Start Date</source>
+				<target state="translated">Normdatum Anfang (YYYY-MM-TT)</target>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_dateranges.end_date">
+				<source>End Date</source>
+				<target state="translated">Normdatum Ende (YYYY-MM-TT)</target>
+			</trans-unit>
+
+			<trans-unit id="tx_chftime_domain_model_dateranges">
+				<source>Dateranges</source>
+				<target state="translated">Datierungen</target>
+			</trans-unit>
+
+			<trans-unit id="tx_chftime_domain_model_dateranges.div1">
+				<source>General</source>
+				<target state="translated">Allgemein</target>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_dateranges.div2">
+				<source>Language</source>
+				<target state="translated">Sprache</target>
+			</trans-unit>
+
+			<trans-unit id="tx_chftime_domain_model_dateranges.label">
+				<source>Label</source>
+				<target state="translated">Bezeichnung</target>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_dateranges.dating_from">
+				<source>Start date</source>
+				<target state="translated">Normdatum Anfang</target>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_dateranges.precision_from">
+				<source>Precision of start date</source>
+				<target state="translated">Präzision des Anfangsdatums</target>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_dateranges.dating_to">
+				<source>End date</source>
+				<target state="translated">Normdatum Ende</target>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_dateranges.precision_to">
+				<source>Precision of end date</source>
+				<target state="translated">Präzision des Enddatums</target>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_dateranges.dating_point">
+				<source>Dating point</source>
+				<target state="translated">Datierungsschlüssel</target>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_dateranges.method">
+				<source>Dating method</source>
+				<target state="translated">Datierungsmethode</target>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_dateranges.certainty">
+				<source>Level of certainty (number)</source>
+				<target state="translated">Zuverlässigkeitsgrad der Datierung (Zahl)</target>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_dateranges.duration">
+				<source>Duration</source>
+				<target state="translated">Zeitraum</target>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_dateranges.calendar">
+				<source>Calendar</source>
+				<target state="translated">Kalender</target>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_dateranges.period">
+				<source>Period</source>
+				<target state="translated">Periode</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>
