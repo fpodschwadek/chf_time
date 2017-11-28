@@ -4,9 +4,9 @@ CREATE TABLE tx_chftime_domain_model_dateranges (
     pid int(11) DEFAULT '0' NOT NULL,
 
     label varchar(255) DEFAULT '' NOT NULL,
-    dating_from varchar(255) DEFAULT '' NOT NULL,
+    dating_from varchar(50) DEFAULT '' NOT NULL,
     precision_from varchar(255) DEFAULT '' NOT NULL,
-    dating_to varchar(255) DEFAULT '' NOT NULL,
+    dating_to varchar(50) DEFAULT '' NOT NULL,
     precision_to varchar(255) DEFAULT '' NOT NULL,
     dating_point varchar(255) DEFAULT '' NOT NULL,
     method varchar(255) DEFAULT '' NOT NULL,
@@ -42,9 +42,13 @@ CREATE TABLE tx_chftime_domain_model_dateranges (
     l10n_diffsource mediumblob,
 
     PRIMARY KEY (uid),
-    KEY parent (pid),
+    KEY pid (pid),
     KEY t3ver_oid (t3ver_oid,t3ver_wsid),
 
-    KEY parent_record (parent),
+    KEY parent (parent),
+    KEY tablename (tablename),
+    KEY fieldname (fieldname),
+    KEY dateranges_start_end (dating_from,dating_to),
+    KEY dateranges_end_start (dating_to,dating_from)
 
-) ENGINE=MyISAM;
+) ENGINE=InnoDB;
