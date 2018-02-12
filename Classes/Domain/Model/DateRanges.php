@@ -5,7 +5,7 @@ namespace Digicademy\ChfTime\Domain\Model;
 /***************************************************************
  *  Copyright notice
  *
- *  (c) 2017 Torsten Schrade <Torsten.Schrade@adwmainz.de>, Academy of Sciences and Literature | Mainz
+ *  (c) 2018 Torsten Schrade <Torsten.Schrade@adwmainz.de>, Academy of Sciences and Literature | Mainz
  *
  *  All rights reserved
  *
@@ -97,16 +97,16 @@ class DateRanges extends AbstractValueObject
     /**
      * The calendar used
      *
-     * @var \string $calendar
+     * @var \Digicademy\ChfTime\Domain\Model\Calendar $calendar
      */
     protected $calendar;
 
     /**
-     * A date period
+     * A date temporalEntity
      *
-     * @var \string $period
+     * @var \Digicademy\ChfTime\Domain\Model\TemporalEntity $temporalEntity
      */
-    protected $period;
+    protected $temporalEntity;
 
     /**
      * Returns the label
@@ -309,7 +309,7 @@ class DateRanges extends AbstractValueObject
     /**
      * Returns the calendar
      *
-     * @return \string
+     * @return \Digicademy\ChfTime\Domain\Model\Calendar
      */
     public function getCalendar()
     {
@@ -319,35 +319,35 @@ class DateRanges extends AbstractValueObject
     /**
      * Sets the calendar
      *
-     * @param \string $calendar
+     * @param \Digicademy\ChfTime\Domain\Model\Calendar $calendar
      *
      * @return void
      */
-    public function setCalendar($calendar)
+    public function setCalendar(Calendar $calendar)
     {
         $this->calendar = $calendar;
     }
 
     /**
-     * Returns the period
+     * Returns the temporal entity
      *
-     * @return \string
+     * @return \Digicademy\ChfTime\Domain\Model\TemporalEntity
      */
-    public function getPeriod()
+    public function getTemporalEntity()
     {
-        return $this->period;
+        return $this->temporalEntity;
     }
 
     /**
-     * Sets the period
+     * Sets the temporal entity
      *
-     * @param \string $period
+     * @param \Digicademy\ChfTime\Domain\Model\TemporalEntity $temporalEntity
      *
      * @return void
      */
-    public function setPeriod($period)
+    public function setTemporalEntity(TemporalEntity $temporalEntity)
     {
-        $this->period = $period;
+        $this->temporalEntity = $temporalEntity;
     }
 
 }

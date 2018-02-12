@@ -11,7 +11,6 @@ return array(
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
-        'dividers2tabs' => true,
         'versioningWS' => 2,
         'versioning_followPages' => true,
         'languageField' => 'sys_language_uid',
@@ -21,8 +20,8 @@ return array(
         'enablecolumns' => array(
             'disabled' => 'hidden',
         ),
-        'searchFields' => 'label,dating_from,precision_from,dating_to,precision_to,dating_point,method,duration,calendar,period',
-        'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('chf_time') . 'Resources/Public/Icons/tx_chftime_domain_model_dateranges.png'
+        'searchFields' => 'label,dating_from,precision_from,dating_to,precision_to,dating_point,method,duration',
+        'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('chf_time') . 'Resources/Public/Icons/tx_chftime_domain_model_dateranges.svg'
     ),
     'interface' => array(
         'showRecordFieldList' => '
@@ -40,7 +39,7 @@ return array(
             certainty,
             duration,
             calendar,
-            period,
+            temporal_entity,
         ',
     ),
     'types' => array(
@@ -58,7 +57,7 @@ return array(
                 certainty,
                 duration,
                 calendar,
-                period,
+                temporal_entity,
             --div--;LLL:EXT:chf_time/Resources/Private/Language/locallang_db.xlf:tx_chftime_domain_model_dateranges.div2,
                 sys_language_uid,
                 l10n_parent,
@@ -201,18 +200,59 @@ return array(
             'exclude' => 1,
             'label' => 'LLL:EXT:chf_time/Resources/Private/Language/locallang_db.xlf:tx_chftime_domain_model_dateranges.calendar',
             'config' => array(
-                'type' => 'input',
-                'size' => 30,
-                'eval' => 'trim'
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'items' => array (
+                    array('', '0'),
+                ),
+                'foreign_table' => 'tx_chftime_domain_model_calendar',
+                'foreign_table_where' => 'AND tx_chftime_domain_model_calendar.pid=###CURRENT_PID### ORDER BY name',
+                'minitems' => 0,
+                'maxitems' => 1,
             ),
         ),
-        'period' => array(
-            'exclude' => 1,
-            'label' => 'LLL:EXT:chf_time/Resources/Private/Language/locallang_db.xlf:tx_chftime_domain_model_dateranges.period',
+        'temporal_entity' => array(
+            'exclude' => 0,
+            'label' => 'LLL:EXT:chf_time/Resources/Private/Language/locallang_db.xml:tx_chftime_domain_model_dateranges.temporal_entity',
             'config' => array(
-                'type' => 'input',
-                'size' => 30,
-                'eval' => 'trim'
+                'type' => 'group',
+                'internal_type' => 'db',
+                'allowed' => 'tx_chftime_domain_model_temporal_entity',
+                'foreign_table' => 'tx_chftime_domain_model_temporal_entity',
+                'maxitems' => 1,
+                'size' => 1,
+                'wizards' => array(
+                    'suggest' => array(
+                        'type' => 'suggest',
+                        'default' => array(
+                            'pidList' => '###PLACEHOLDER###',
+                        ),
+                    ),
+                    'add' => array(
+                        'type' => 'popup',
+                        'JSopenParams' => 'height=550,width=780,status=0,menubar=0,scrollbars=1',
+                        'module' => array(
+                            'name' => 'wizard_add',
+                        ),
+                        'title' => 'Create new record',
+                        'icon' => 'actions-add',
+                        'params' => array(
+                            'table' => 'tx_chftime_domain_model_temporal_entity',
+                            'pid' => '###PAGE_TSCONFIG_ID###',
+                            'setValue' => 'prepend'
+                        ),
+                    ),
+                    'edit' => array(
+                        'type' => 'popup',
+                        'JSopenParams' => 'height=350,width=580,status=0,menubar=0,scrollbars=1',
+                        'popup_onlyOpenIfSelected' => 1,
+                        'module' => array(
+                            'name' => 'wizard_edit',
+                        ),
+                        'title' => 'Edit',
+                        'icon' => 'actions-open',
+                    ),
+                ),
             ),
         ),
         'parent' => array(

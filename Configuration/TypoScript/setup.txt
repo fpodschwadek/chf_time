@@ -1,0 +1,11 @@
+config.tx_extbase {
+	persistence {
+		classes {
+			Digicademy\ChfTime\Domain\Model\TemporalEntity {
+				mapping {
+					tableName = tx_chftime_domain_model_temporal_entity
+				}
+			}
+		}
+	}
+}

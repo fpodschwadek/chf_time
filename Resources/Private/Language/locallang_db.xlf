@@ -47,8 +47,93 @@
 			<trans-unit id="tx_chftime_domain_model_dateranges.calendar">
 				<source>Calendar</source>
 			</trans-unit>
-			<trans-unit id="tx_chftime_domain_model_dateranges.period">
+			<trans-unit id="tx_chftime_domain_model_dateranges.temporal_entity">
+				<source>Temporal Entity</source>
+			</trans-unit>
+
+			<!-- TEMPORAL ENTITY -->
+
+			<trans-unit id="tx_chftime_domain_model_temporal_entity">
+				<source>Temporal Entity</source>
+			</trans-unit>
+
+			<trans-unit id="tx_chftime_domain_model_temporal_entity.div1">
+				<source>General</source>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_temporal_entity.div2">
+				<source>Language</source>
+			</trans-unit>
+
+			<trans-unit id="tx_chftime_domain_model_temporal_entity.persistent_identifier">
+				<source>Persistent Identifier</source>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_temporal_entity.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_temporal_entity.name_variants">
+				<source>Name Variants</source>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_temporal_entity.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_temporal_entity.type.I.10">
+				<source>Eon</source>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_temporal_entity.type.I.20">
+				<source>Era</source>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_temporal_entity.type.I.30">
 				<source>Period</source>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_temporal_entity.type.I.40">
+				<source>Epoch</source>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_temporal_entity.type.I.50">
+				<source>Age</source>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_temporal_entity.parent">
+				<source>Parent Temporal Entity</source>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_temporal_entity.date_range">
+				<source>Date Range</source>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_temporal_entity.spatial_extent">
+				<source>Spatial Extent</source>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_temporal_entity.source">
+				<source>Source</source>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_temporal_entity.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_temporal_entity.statements">
+				<source>LOD Statements</source>
+			</trans-unit>
+
+			<!-- CALENDAR -->
+
+			<trans-unit id="tx_chftime_domain_model_calendar">
+				<source>Calendar</source>
+			</trans-unit>
+
+			<trans-unit id="tx_chftime_domain_model_calendar.div1">
+				<source>General</source>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_calendar.div2">
+				<source>Language</source>
+			</trans-unit>
+
+			<trans-unit id="tx_chftime_domain_model_calendar.persistent_identifier">
+				<source>Persistent Identifier</source>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_calendar.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_calendar.name_variants">
+				<source>Name Variants</source>
+			</trans-unit>
+			<trans-unit id="tx_chftime_domain_model_calendar.description">
+				<source>Description</source>
 			</trans-unit>
 
 		</body>
