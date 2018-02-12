@@ -206,7 +206,7 @@ return array(
                     array('', '0'),
                 ),
                 'foreign_table' => 'tx_chftime_domain_model_calendar',
-                'foreign_table_where' => 'AND tx_chftime_domain_model_calendar.pid=###CURRENT_PID### ORDER BY name',
+                'foreign_table_where' => 'AND tx_chftime_domain_model_calendar.pid IN (###PAGE_TSCONFIG_IDLIST###) ORDER BY name',
                 'minitems' => 0,
                 'maxitems' => 1,
             ),
