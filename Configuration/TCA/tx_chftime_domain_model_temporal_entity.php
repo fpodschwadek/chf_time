@@ -7,7 +7,7 @@ return array(
     'ctrl' => array(
         'title' => 'LLL:EXT:chf_time/Resources/Private/Language/locallang_db.xlf:tx_chftime_domain_model_temporal_entity',
         'label' => 'name',
-        'default_sortby' => 'ORDER BY name',
+        'sortby' => 'sorting',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',

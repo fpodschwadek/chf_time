@@ -88,6 +88,7 @@ CREATE TABLE tx_chftime_domain_model_temporal_entity (
     cruser_id int(11) DEFAULT '0' NOT NULL,
     deleted tinyint(4) unsigned DEFAULT '0' NOT NULL,
     hidden tinyint(4) unsigned DEFAULT '0' NOT NULL,
+    sorting int(11) unsigned DEFAULT '0' NOT NULL,
 
     t3_origuid int(11) DEFAULT '0' NOT NULL,
     t3ver_oid int(11) DEFAULT '0' NOT NULL,
