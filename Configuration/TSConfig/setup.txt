@@ -3,11 +3,6 @@ TCEFORM {
 
 		# pages with temporal entity records
 		parent.PAGE_TSCONFIG_IDLIST = 1
-
-		# page for LOD statements created with new wizard
-		statements.PAGE_TSCONFIG_ID = 1
-		# pages for LOD statements suggest wizard
-		statements.suggest.default.pidList = 1
 	}
 
 	tx_chftime_domain_model_dateranges {

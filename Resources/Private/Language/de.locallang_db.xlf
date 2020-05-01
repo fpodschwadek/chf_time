@@ -154,10 +154,6 @@
 				<source>Description</source>
 				<target state="translated">Beschreibung</target>
 			</trans-unit>
-			<trans-unit id="tx_chftime_domain_model_temporal_entity.statements">
-				<source>LOD Statements</source>
-				<target state="translated">LOD Statements</target>
-			</trans-unit>
 
 			<!-- CALENDAR -->
 

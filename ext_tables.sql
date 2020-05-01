@@ -80,15 +80,11 @@ CREATE TABLE tx_chftime_domain_model_temporal_entity (
     # tx_chfgeo_domain_model_toponym (1:1)
     spatial_extent int(11) unsigned DEFAULT '0',
 
-    # tx_vocabulary_domain_model_statements (m:n)
-    statements int(11) unsigned DEFAULT '0',
-
     tstamp int(11) unsigned DEFAULT '0' NOT NULL,
     crdate int(11) unsigned DEFAULT '0' NOT NULL,
     cruser_id int(11) DEFAULT '0' NOT NULL,
     deleted tinyint(4) unsigned DEFAULT '0' NOT NULL,
     hidden tinyint(4) unsigned DEFAULT '0' NOT NULL,
-    sorting int(11) unsigned DEFAULT '0' NOT NULL,
 
     t3_origuid int(11) DEFAULT '0' NOT NULL,
     t3ver_oid int(11) DEFAULT '0' NOT NULL,
@@ -113,8 +109,7 @@ CREATE TABLE tx_chftime_domain_model_temporal_entity (
     KEY name (name),
     KEY parent (parent),
     KEY date_range (date_range),
-    KEY spatial_extent (spatial_extent),
-    KEY statements (statements)
+    KEY spatial_extent (spatial_extent)
 
 ) ENGINE=InnoDB;
 

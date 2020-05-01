@@ -106,9 +106,6 @@
 			<trans-unit id="tx_chftime_domain_model_temporal_entity.description">
 				<source>Description</source>
 			</trans-unit>
-			<trans-unit id="tx_chftime_domain_model_temporal_entity.statements">
-				<source>LOD Statements</source>
-			</trans-unit>
 
 			<!-- CALENDAR -->
 
