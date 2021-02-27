@@ -21,7 +21,7 @@ return array(
             'disabled' => 'hidden',
         ),
         'searchFields' => 'persistent_identifier,name,name_variants,source,description',
-        'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('chf_time') . 'Resources/Public/Icons/tx_chftime_domain_model_temporal_entity.svg'
+        'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('chf_time') . 'Resources/Public/Icons/tx_chftime_domain_model_temporal_entity.svg'
     ),
     'interface' => array(
         'showRecordFieldList' => '

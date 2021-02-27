@@ -35,7 +35,7 @@ class Calendar extends AbstractEntity
      * Persistent Identifier
      *
      * @var \string $persistentIdentifier
-     * @validate NotEmpty
+     * @TYPO3\\CMS\\Extbase\\Annotation\\Validate NotEmpty
      */
     protected $persistentIdentifier;
 

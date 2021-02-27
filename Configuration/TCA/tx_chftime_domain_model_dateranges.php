@@ -21,7 +21,7 @@ return array(
             'disabled' => 'hidden',
         ),
         'searchFields' => 'label,dating_from,precision_from,dating_to,precision_to,dating_point,method,duration',
-        'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('chf_time') . 'Resources/Public/Icons/tx_chftime_domain_model_dateranges.svg'
+        'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('chf_time') . 'Resources/Public/Icons/tx_chftime_domain_model_dateranges.svg'
     ),
     'interface' => array(
         'showRecordFieldList' => '

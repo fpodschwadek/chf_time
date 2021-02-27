@@ -37,7 +37,7 @@ class TemporalEntity extends AbstractEntity
      * Persistent Identifier
      *
      * @var \string $persistentIdentifier
-     * @validate NotEmpty
+     * @TYPO3\\CMS\\Extbase\\Annotation\\Validate NotEmpty
      */
     protected $persistentIdentifier;
 
@@ -66,7 +66,7 @@ class TemporalEntity extends AbstractEntity
      * Parent Entity
      *
      * @var \Digicademy\ChfTime\Domain\Model\TemporalEntity $parent
-     * @lazy
+     * @TYPO3\\CMS\\Extbase\\Annotation\\ORM\\Lazy
      */
     protected $parent;
 
@@ -74,7 +74,7 @@ class TemporalEntity extends AbstractEntity
      * Date Range
      *
      * @var \Digicademy\ChfTime\Domain\Model\DateRanges $dateRange
-     * @lazy
+     * @TYPO3\\CMS\\Extbase\\Annotation\\ORM\\Lazy
      */
     protected $dateRange;
 
@@ -82,7 +82,7 @@ class TemporalEntity extends AbstractEntity
      * Spatial Extent
      *
      * @var \Digicademy\ChfGeo\Domain\Model\Toponym $spatialExtent
-     * @lazy
+     * @TYPO3\\CMS\\Extbase\\Annotation\\ORM\\Lazy
      */
     protected $spatialExtent;
 
