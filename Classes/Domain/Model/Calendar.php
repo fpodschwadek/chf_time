@@ -27,6 +27,8 @@ namespace Digicademy\ChfTime\Domain\Model;
  ***************************************************************/
 
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
+use TYPO3\CMS\Extbase\Annotation as Extbase;
+use TYPO3\CMS\Extbase\Annotation\ORM\Lazy;
 
 class Calendar extends AbstractEntity
 {
@@ -35,7 +37,7 @@ class Calendar extends AbstractEntity
      * Persistent Identifier
      *
      * @var \string $persistentIdentifier
-     * @TYPO3\\CMS\\Extbase\\Annotation\\Validate NotEmpty
+     * @Extbase\Validate("NotEmpty")
      */
     protected $persistentIdentifier;
 

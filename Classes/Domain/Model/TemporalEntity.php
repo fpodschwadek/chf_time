@@ -29,6 +29,8 @@ namespace Digicademy\ChfTime\Domain\Model;
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 use Digicademy\ChfTime\Domain\Model\TemporalEntity as ParentTemporalEntity;
 use Digicademy\ChfGeo\Domain\Model\Toponym;
+use TYPO3\CMS\Extbase\Annotation as Extbase;
+use TYPO3\CMS\Extbase\Annotation\ORM\Lazy;
 
 class TemporalEntity extends AbstractEntity
 {
@@ -37,7 +39,7 @@ class TemporalEntity extends AbstractEntity
      * Persistent Identifier
      *
      * @var \string $persistentIdentifier
-     * @TYPO3\\CMS\\Extbase\\Annotation\\Validate NotEmpty
+     * @Extbase\Validate("NotEmpty")
      */
     protected $persistentIdentifier;
 
@@ -66,7 +68,7 @@ class TemporalEntity extends AbstractEntity
      * Parent Entity
      *
      * @var \Digicademy\ChfTime\Domain\Model\TemporalEntity $parent
-     * @TYPO3\\CMS\\Extbase\\Annotation\\ORM\\Lazy
+     * @Lazy
      */
     protected $parent;
 
@@ -74,7 +76,7 @@ class TemporalEntity extends AbstractEntity
      * Date Range
      *
      * @var \Digicademy\ChfTime\Domain\Model\DateRanges $dateRange
-     * @TYPO3\\CMS\\Extbase\\Annotation\\ORM\\Lazy
+     * @Lazy
      */
     protected $dateRange;
 
@@ -82,7 +84,7 @@ class TemporalEntity extends AbstractEntity
      * Spatial Extent
      *
      * @var \Digicademy\ChfGeo\Domain\Model\Toponym $spatialExtent
-     * @TYPO3\\CMS\\Extbase\\Annotation\\ORM\\Lazy
+     * @Lazy
      */
     protected $spatialExtent;
 
